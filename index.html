@@ -21,12 +21,26 @@
     <div id="effects-placeholder"></div>
 
     <div class="container">
-      <div class="progress" id="progress">1 / 14</div>
+      <div class="progress" id="progress">1 / 15</div>
 
       <!-- Slides Start -->
 
-      <!-- Slide 1 -->
+      <!-- Slide 1: Introduction -->
       <div class="slide active">
+        <img src="images/0.jpg" alt="Our Journey" />
+        <h2>Our Journey</h2>
+        <p>
+          Welcome to our story...<br /><br />
+          From the very first "Hey" to this moment,<br />
+          every day has been a chapter in our beautiful journey.<br /><br />
+          This is our timeline of love, laughter, and memories -<br />
+          from Day One to today.<br /><br />
+          <em>Swipe through our moments together</em>
+        </p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
         <img src="images/0.jpg" alt="" />
         <h2>The Beginning</h2>
         <p>
@@ -38,7 +52,7 @@
         </p>
       </div>
 
-      <!-- Slide 2 -->
+      <!-- Slide 3 -->
       <div class="slide">
         <img src="images/1.png" alt="" />
         <h2>April 13</h2>
@@ -51,8 +65,8 @@
         </p>
       </div>
 
-      <!-- Slide 3 -->
-      <div class="slide" id="slide-3">
+      <!-- Slide 4 -->
+      <div class="slide" id="slide-4">
         <div class="slider-images">
           <img
             src="images/slide3_1.jpeg"
@@ -82,8 +96,8 @@
         </p>
       </div>
 
-      <!-- Slide 4 -->
-      <div class="slide" id="slide-4">
+      <!-- Slide 5 -->
+      <div class="slide" id="slide-5">
         <img src="images/slide4.jpeg" alt="Chat Screenshot" />
         <h2>July 1</h2>
         <p>
@@ -95,7 +109,7 @@
         </p>
       </div>
 
-      <!-- Slide 5 -->
+      <!-- Slide 7 -->
       <div class="slide">
         <img src="images/slide5.jpeg" alt="" />
         <h2>September 5</h2>
@@ -107,8 +121,8 @@
         </p>
       </div>
 
-      <!-- Slide 6 -->
-      <div class="slide" id="slide-6">
+      <!-- Slide 8 -->
+      <div class="slide" id="slide-7">
         <div class="slider-images">
           <img
             src="images/slide6_1.jpeg"
@@ -130,8 +144,8 @@
         </p>
       </div>
 
-      <!-- Slide 7 -->
-      <div class="slide" id="slide-7">
+      <!-- Slide 9 -->
+      <div class="slide" id="slide-8">
         <div class="slider-images">
           <img
             src="images/slide7_1.jpeg"
@@ -159,8 +173,8 @@
         </p>
       </div>
 
-      <!-- Slide 8 -->
-      <div class="slide" id="slide-8">
+      <!-- Slide 10 -->
+      <div class="slide" id="slide-9">
         <div class="slider-images">
           <img class="slider-img active" src="images/slide8_1.jpeg" alt="" />
           <img class="slider-img" src="images/slide8_2.jpeg" alt="" />
@@ -175,8 +189,8 @@
         </p>
       </div>
 
-      <!-- Slide 9 -->
-      <div class="slide" id="slide-9">
+      <!-- Slide 11 -->
+      <div class="slide" id="slide-10">
         <div class="slider-images">
           <img class="slider-img active" src="images/slide9_1.jpeg" alt="" />
           <img class="slider-img" src="images/slide9_2.jpeg" alt="" />
@@ -190,8 +204,8 @@
         </p>
       </div>
 
-      <!-- Slide 10 -->
-      <div class="slide" id="slide-10">
+      <!-- Slide 12 -->
+      <div class="slide" id="slide-11">
         <div class="slider-images">
           <img class="slider-img active" src="images/slide10_1.jpeg" alt="" />
           <img class="slider-img" src="images/slide10_2.jpeg" alt="" />
@@ -209,8 +223,8 @@
         </p>
       </div>
 
-      <!-- Slide 11 -->
-      <div class="slide" id="slide-11">
+      <!-- Slide 13 -->
+      <div class="slide" id="slide-12">
         <div class="slider-images">
           <img class="slider-img active" src="images/slide11_1.jpeg" alt="" />
           <img class="slider-img" src="images/slide11_2.jpeg" alt="" />
@@ -227,8 +241,8 @@
         </p>
       </div>
 
-      <!-- Slide 12 -->
-      <div class="slide" id="slide-12">
+      <!-- Slide 14 -->
+      <div class="slide" id="slide-13">
         <div class="slider-images">
           <img class="slider-img active" src="images/slide12_1.jpeg" alt="" />
           <img class="slider-img" src="images/slide12_2.jpeg" alt="" />
@@ -245,8 +259,8 @@
         </p>
       </div>
 
-      <!-- Slide 13 -->
-      <div class="slide" id="slide-13">
+      <!-- Slide 15 -->
+      <div class="slide" id="slide-14">
         <div class="slider-images">
           <img class="slider-img active" src="images/slide13_1.jpeg" alt="" />
           <img class="slider-img" src="images/slide13_2.jpeg" alt="" />
@@ -268,7 +282,7 @@
         </p>
       </div>
 
-      <!-- Slide 14 -->
+      <!-- Slide 15 -->
       <div class="slide">
         <img src="images/13.jpg" alt="" />
         <h2>Now</h2>
@@ -280,7 +294,7 @@
         </p>
       </div>
 
-      <!-- Slide 15 -->
+      <!-- Slide 16 -->
       <div class="slide">
         <p>
           <b>Shital,</b><br /><br />
@@ -333,25 +347,7 @@
 
       // Restart button logic
       document.addEventListener("DOMContentLoaded", function () {
-        const restartBtn = document.getElementById("restartBtn");
-        if (restartBtn) {
-          restartBtn.addEventListener("click", function () {
-            // Reset current slide index to 0
-            current = 0;
-            // Hide all slides
-            document
-              .querySelectorAll(".slide")
-              .forEach((slide) => slide.classList.remove("active"));
-            // Show first slide
-            document.querySelectorAll(".slide")[0].classList.add("active");
-            // Reset progress
-            document.getElementById("progress").innerText =
-              "1 / " + document.querySelectorAll(".slide").length;
-            // Update buttons and effects
-            updateButtons();
-            updateEffects();
-          });
-        }
+        // Restart logic moved to script.js
       });
     </script>
   </body>

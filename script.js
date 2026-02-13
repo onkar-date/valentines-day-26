@@ -1,34 +1,3 @@
-// Slide 3 image slider logic
-let slide3Index = 0;
-const slide3Imgs = () =>
-  document.querySelectorAll("#slide-3 .slider-images .slider-img");
-
-function showSlide3Img(idx) {
-  const imgs = slide3Imgs();
-  imgs.forEach((img, i) => {
-    img.classList.toggle("active", i === idx);
-  });
-}
-
-function prevSlide3Img() {
-  const imgs = slide3Imgs();
-  slide3Index = (slide3Index - 1 + imgs.length) % imgs.length;
-  showSlide3Img(slide3Index);
-}
-
-function nextSlide3Img() {
-  const imgs = slide3Imgs();
-  slide3Index = (slide3Index + 1) % imgs.length;
-  showSlide3Img(slide3Index);
-}
-
-// Auto-scroll for slide 3
-function autoScrollSlide3() {
-  const imgs = slide3Imgs();
-  slide3Index = (slide3Index + 1) % imgs.length;
-  showSlide3Img(slide3Index);
-}
-
 // Slide 4 image slider logic
 let slide4Index = 0;
 const slide4Imgs = () =>
@@ -60,28 +29,40 @@ function autoScrollSlide4() {
   showSlide4Img(slide4Index);
 }
 
-// Initialize sliders on page load
-// Slide 6 image slider logic
-// Slide 7 image slider logic
-// Slide 8 image slider logic
-let slide8Index = 0;
-const slide8Imgs = () =>
-  document.querySelectorAll("#slide-8 .slider-images .slider-img");
+// Slide 5 image slider logic
+let slide5Index = 0;
+const slide5Imgs = () =>
+  document.querySelectorAll("#slide-5 .slider-images .slider-img");
 
-function showSlide8Img(idx) {
-  const imgs = slide8Imgs();
+function showSlide5Img(idx) {
+  const imgs = slide5Imgs();
   imgs.forEach((img, i) => {
     img.classList.toggle("active", i === idx);
   });
 }
 
-// Auto-scroll for slide 8
-function autoScrollSlide8() {
-  const imgs = slide8Imgs();
-  slide8Index = (slide8Index + 1) % imgs.length;
-  showSlide8Img(slide8Index);
+function prevSlide5Img() {
+  const imgs = slide5Imgs();
+  slide5Index = (slide5Index - 1 + imgs.length) % imgs.length;
+  showSlide5Img(slide5Index);
 }
 
+function nextSlide5Img() {
+  const imgs = slide5Imgs();
+  slide5Index = (slide5Index + 1) % imgs.length;
+  showSlide5Img(slide5Index);
+}
+
+// Auto-scroll for slide 5
+function autoScrollSlide5() {
+  const imgs = slide5Imgs();
+  slide5Index = (slide5Index + 1) % imgs.length;
+  showSlide5Img(slide5Index);
+}
+
+// Initialize sliders on page load
+// Slide 6 image slider logic
+// Slide 7 image slider logic
 // Slide 9 image slider logic
 let slide9Index = 0;
 const slide9Imgs = () =>
@@ -139,25 +120,6 @@ function autoScrollSlide11() {
   showSlide11Img(slide11Index);
 }
 
-// Slide 12 image slider logic
-let slide12Index = 0;
-const slide12Imgs = () =>
-  document.querySelectorAll("#slide-12 .slider-images .slider-img");
-
-function showSlide12Img(idx) {
-  const imgs = slide12Imgs();
-  imgs.forEach((img, i) => {
-    img.classList.toggle("active", i === idx);
-  });
-}
-
-// Auto-scroll for slide 12
-function autoScrollSlide12() {
-  const imgs = slide12Imgs();
-  slide12Index = (slide12Index + 1) % imgs.length;
-  showSlide12Img(slide12Index);
-}
-
 // Slide 13 image slider logic
 let slide13Index = 0;
 const slide13Imgs = () =>
@@ -175,6 +137,54 @@ function autoScrollSlide13() {
   const imgs = slide13Imgs();
   slide13Index = (slide13Index + 1) % imgs.length;
   showSlide13Img(slide13Index);
+}
+
+// Slide 14 image slider logic
+let slide14Index = 0;
+const slide14Imgs = () =>
+  document.querySelectorAll("#slide-14 .slider-images .slider-img");
+
+function showSlide14Img(idx) {
+  const imgs = slide14Imgs();
+  imgs.forEach((img, i) => {
+    img.classList.toggle("active", i === idx);
+  });
+}
+
+// Auto-scroll for slide 14
+function autoScrollSlide14() {
+  const imgs = slide14Imgs();
+  slide14Index = (slide14Index + 1) % imgs.length;
+  showSlide14Img(slide14Index);
+}
+let slide8Index = 0;
+const slide8Imgs = () =>
+  document.querySelectorAll("#slide-8 .slider-images .slider-img");
+
+function showSlide8Img(idx) {
+  const imgs = slide8Imgs();
+  imgs.forEach((img, i) => {
+    img.classList.toggle("active", i === idx);
+  });
+}
+
+function prevSlide8Img() {
+  const imgs = slide8Imgs();
+  slide8Index = (slide8Index - 1 + imgs.length) % imgs.length;
+  showSlide8Img(slide8Index);
+}
+
+function nextSlide8Img() {
+  const imgs = slide8Imgs();
+  slide8Index = (slide8Index + 1) % imgs.length;
+  showSlide8Img(slide8Index);
+}
+
+// Auto-scroll for slide 8
+function autoScrollSlide8() {
+  const imgs = slide8Imgs();
+  slide8Index = (slide8Index + 1) % imgs.length;
+  showSlide8Img(slide8Index);
 }
 let slide7Index = 0;
 const slide7Imgs = () =>
@@ -205,144 +215,135 @@ function autoScrollSlide7() {
   slide7Index = (slide7Index + 1) % imgs.length;
   showSlide7Img(slide7Index);
 }
-let slide6Index = 0;
-const slide6Imgs = () =>
-  document.querySelectorAll("#slide-6 .slider-images .slider-img");
-
-function showSlide6Img(idx) {
-  const imgs = slide6Imgs();
-  imgs.forEach((img, i) => {
-    img.classList.toggle("active", i === idx);
-  });
-}
-
-function prevSlide6Img() {
-  const imgs = slide6Imgs();
-  slide6Index = (slide6Index - 1 + imgs.length) % imgs.length;
-  showSlide6Img(slide6Index);
-}
-
-function nextSlide6Img() {
-  const imgs = slide6Imgs();
-  slide6Index = (slide6Index + 1) % imgs.length;
-  showSlide6Img(slide6Index);
-}
-
-// Auto-scroll for slide 6
-function autoScrollSlide6() {
-  const imgs = slide6Imgs();
-  slide6Index = (slide6Index + 1) % imgs.length;
-  showSlide6Img(slide6Index);
-}
 
 // Initialize sliders on page load
 document.addEventListener("DOMContentLoaded", () => {
-  showSlide3Img(slide3Index);
   showSlide4Img(slide4Index);
-  showSlide6Img(slide6Index);
+  showSlide5Img(slide5Index);
   showSlide7Img(slide7Index);
   showSlide8Img(slide8Index);
   showSlide9Img(slide9Index);
   showSlide10Img(slide10Index);
   showSlide11Img(slide11Index);
-  showSlide12Img(slide12Index);
   showSlide13Img(slide13Index);
+  showSlide14Img(slide14Index);
   // Start auto-scroll for all carousel slides
-  setInterval(autoScrollSlide3, 2000);
   setInterval(autoScrollSlide4, 2000);
-  setInterval(autoScrollSlide6, 2000);
+  setInterval(autoScrollSlide5, 2000);
   setInterval(autoScrollSlide7, 2000);
   setInterval(autoScrollSlide8, 2000);
   setInterval(autoScrollSlide9, 2000);
   setInterval(autoScrollSlide10, 2000);
   setInterval(autoScrollSlide11, 2000);
-  setInterval(autoScrollSlide12, 2000);
   setInterval(autoScrollSlide13, 2000);
+  setInterval(autoScrollSlide14, 2000);
 });
-const slides = document.querySelectorAll(".slide");
-const nextBtn = document.getElementById("nextBtn");
-const backBtn = document.getElementById("backBtn");
-const music = document.getElementById("bgMusic");
-const progress = document.getElementById("progress");
 
-let current = 0;
-const total = slides.length;
+// Wait for DOM to be loaded before setting up navigation
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".slide");
+  const nextBtn = document.getElementById("nextBtn");
+  const backBtn = document.getElementById("backBtn");
+  const music = document.getElementById("bgMusic");
+  const progress = document.getElementById("progress");
 
-function updateProgress() {
-  progress.innerText = `${current + 1} / ${total}`;
-}
+  let current = 0;
+  const total = slides.length;
 
-function updateButtons() {
-  // Show back button from slide 2 onwards (index 1)
-  if (current >= 1) {
-    backBtn.style.display = "inline-block";
-  } else {
-    backBtn.style.display = "none";
+  function updateProgress() {
+    progress.innerText = `${current + 1} / ${total}`;
   }
 
-  // Hide next button on last slide
-  if (current >= total - 1) {
-    nextBtn.style.display = "none";
-  } else {
-    nextBtn.style.display = "inline-block";
+  function updateButtons() {
+    // Show back button from slide 2 onwards (index 1)
+    if (current >= 1) {
+      backBtn.style.display = "inline-block";
+    } else {
+      backBtn.style.display = "none";
+    }
+
+    // Hide next button on last slide
+    if (current >= total - 1) {
+      nextBtn.style.display = "none";
+    } else {
+      nextBtn.style.display = "inline-block";
+    }
   }
-}
 
-function updateEffects() {
-  // Query effects dynamically since they are loaded from effects.html
-  const slideEffects = document.querySelectorAll(".slide-effect");
+  function updateEffects() {
+    // Query effects dynamically since they are loaded from effects.html
+    const slideEffects = document.querySelectorAll(".slide-effect");
 
-  // Hide all effects first
-  slideEffects.forEach((effect) => {
-    effect.style.display = "none";
+    // Hide all effects first
+    slideEffects.forEach((effect) => {
+      effect.style.display = "none";
+    });
+
+    // Show effect for current slide (1-indexed)
+    const currentEffect = document.getElementById(`effect-${current + 1}`);
+    if (currentEffect) {
+      currentEffect.style.display = "block";
+    }
+  }
+
+  function fadeInMusic() {
+    music.volume = 0;
+    music.play();
+    let fade = setInterval(() => {
+      if (music.volume < 0.5) {
+        music.volume += 0.02;
+      } else {
+        clearInterval(fade);
+      }
+    }, 200);
+  }
+
+  nextBtn.addEventListener("click", () => {
+    if (current === 0) {
+      fadeInMusic();
+    }
+
+    slides[current].classList.remove("active");
+    current++;
+
+    if (current < total) {
+      slides[current].classList.add("active");
+      updateProgress();
+      updateEffects();
+      updateButtons();
+    }
   });
 
-  // Show effect for current slide (1-indexed)
-  const currentEffect = document.getElementById(`effect-${current + 1}`);
-  if (currentEffect) {
-    currentEffect.style.display = "block";
-  }
-}
-
-function fadeInMusic() {
-  music.volume = 0;
-  music.play();
-  let fade = setInterval(() => {
-    if (music.volume < 0.5) {
-      music.volume += 0.02;
-    } else {
-      clearInterval(fade);
+  backBtn.addEventListener("click", () => {
+    if (current > 0) {
+      slides[current].classList.remove("active");
+      current--;
+      slides[current].classList.add("active");
+      updateProgress();
+      updateEffects();
+      updateButtons();
     }
-  }, 200);
-}
+  });
 
-nextBtn.addEventListener("click", () => {
-  if (current === 0) {
-    fadeInMusic();
+  // Initial state
+  updateEffects();
+  updateButtons();
+
+  // Restart button logic
+  const restartBtn = document.getElementById("restartBtn");
+  if (restartBtn) {
+    restartBtn.addEventListener("click", function () {
+      // Reset current slide index to 0
+      current = 0;
+      // Hide all slides
+      slides.forEach((slide) => slide.classList.remove("active"));
+      // Show first slide
+      slides[0].classList.add("active");
+      // Reset progress
+      updateProgress();
+      // Update buttons and effects
+      updateButtons();
+      updateEffects();
+    });
   }
-
-  slides[current].classList.remove("active");
-  current++;
-
-  if (current < total) {
-    slides[current].classList.add("active");
-    updateProgress();
-    updateEffects();
-    updateButtons();
-  }
-});
-
-backBtn.addEventListener("click", () => {
-  if (current > 0) {
-    slides[current].classList.remove("active");
-    current--;
-    slides[current].classList.add("active");
-    updateProgress();
-    updateEffects();
-    updateButtons();
-  }
-});
-
-// Initial state
-updateEffects();
-updateButtons();
+}); // Close DOMContentLoaded
