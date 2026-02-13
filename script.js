@@ -1,3 +1,33 @@
+// Slide 12 image slider logic
+let slide12Index = 0;
+const slide12Imgs = () =>
+  document.querySelectorAll("#slide-12 .slider-images .slider-img");
+
+function showSlide12Img(idx) {
+  const imgs = slide12Imgs();
+  imgs.forEach((img, i) => {
+    img.classList.toggle("active", i === idx);
+  });
+}
+
+function prevSlide12Img() {
+  const imgs = slide12Imgs();
+  slide12Index = (slide12Index - 1 + imgs.length) % imgs.length;
+  showSlide12Img(slide12Index);
+}
+
+function nextSlide12Img() {
+  const imgs = slide12Imgs();
+  slide12Index = (slide12Index + 1) % imgs.length;
+  showSlide12Img(slide12Index);
+}
+
+// Auto-scroll for slide 12
+function autoScrollSlide12() {
+  const imgs = slide12Imgs();
+  slide12Index = (slide12Index + 1) % imgs.length;
+  showSlide12Img(slide12Index);
+}
 // Slide 4 image slider logic
 let slide4Index = 0;
 const slide4Imgs = () =>
@@ -225,6 +255,7 @@ document.addEventListener("DOMContentLoaded", () => {
   showSlide9Img(slide9Index);
   showSlide10Img(slide10Index);
   showSlide11Img(slide11Index);
+  showSlide12Img(slide12Index);
   showSlide13Img(slide13Index);
   showSlide14Img(slide14Index);
   // Start auto-scroll for all carousel slides
@@ -235,6 +266,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(autoScrollSlide9, 2000);
   setInterval(autoScrollSlide10, 2000);
   setInterval(autoScrollSlide11, 2000);
+  setInterval(autoScrollSlide12, 2000);
   setInterval(autoScrollSlide13, 2000);
   setInterval(autoScrollSlide14, 2000);
 });
