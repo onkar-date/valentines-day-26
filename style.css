@@ -1,3 +1,15 @@
+.slide.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  padding-bottom: 120px; /* Increased to ensure content is visible above fixed buttons */
+}
+
+@media (max-width: 600px) {
+  .slide.active {
+    padding-bottom: 180px !important; /* Extra space for mobile browser bars */
+  }
+}
 /* Slide 3 image slider styles */
 .slider-container {
   display: flex;
