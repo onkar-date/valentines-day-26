@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Our Journey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <audio id="bgMusic" loop>
+      <source src="music.mp3" type="audio/mp3" />
+    </audio>
+
+    <!-- Placeholder for slide effects -->
+    <div id="effects-placeholder"></div>
+
+    <div class="container">
+      <div class="progress" id="progress">1 / 14</div>
+
+      <!-- Slides Start -->
+
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <img src="images/0.jpg" alt="" />
+        <h2>The Beginning</h2>
+        <p>
+          "Hey"<br /><br />
+          Just one word.<br />
+          Three letters that started everything.<br /><br />
+          Sometimes the most important conversations<br />
+          begin with the simplest words.
+        </p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="images/1.png" alt="" />
+        <h2>April 13</h2>
+        <p>
+          It started with rain.<br /><br />
+          Two hours that felt like a lifetime in a moment.<br /><br />
+          You reached home soaked, but my heart felt full.<br />
+          I donated blood that day, maybe a sign of giving a piece of myself
+          away.<br /><br />
+        </p>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide" id="slide-3">
+        <div class="slider-images">
+          <img
+            src="images/slide3_1.jpeg"
+            alt="Chat Screenshot 1"
+            class="slider-img active"
+          />
+          <img
+            src="images/slide3_2.jpeg"
+            alt="Chat Screenshot 2"
+            class="slider-img"
+          />
+          <img
+            src="images/slide3_3.jpeg"
+            alt="Chat Screenshot 3"
+            class="slider-img"
+          />
+          <!-- Add more images as needed -->
+        </div>
+        <h2>The Everyday Phase</h2>
+        <p>
+          You always called me <b>Makad</b><br />
+          "Divasbhar nusta lolat astos!" you’d tease, and I’d pretend to
+          protest.<br /><br />
+          But those silly, cozy days - just us, talking about everything and
+          nothing - became my favorite memories.<br /><br />
+          Who knew a Makad could feel so loved?
+        </p>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide" id="slide-4">
+        <img src="images/slide4.jpeg" alt="Chat Screenshot" />
+        <h2>July 1</h2>
+        <p>
+          I said goodbye.<br /><br />
+          My heart broke with every word, but I thought it was for the best.<br />
+          Sometimes we hurt the people we love when we're lost ourselves.<br />
+          I was drowning in my own confusion.<br /><br />
+          Letting you go was the hardest thing I'd ever done.
+        </p>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="slide">
+        <img src="images/slide5.jpeg" alt="" />
+        <h2>September 5</h2>
+        <p>
+          "Hey Onkar kasa ahes."<br /><br />
+          A simple message, but it felt like sunlight after a long rain.<br />
+          Sometimes, the smallest words can restart a heartbeat.<br />
+          You found your way back to me.
+        </p>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="slide" id="slide-6">
+        <div class="slider-images">
+          <img
+            src="images/slide6_1.jpeg"
+            alt="Dubai Screenshot 1"
+            class="slider-img active"
+          />
+          <img
+            src="images/slide6_2.jpeg"
+            alt="Dubai Screenshot 2"
+            class="slider-img"
+          />
+        </div>
+        <h2>Dubai</h2>
+        <p>
+          Different place, same connection.<br />
+          Miles apart, but you were always close in my thoughts.<br /><br />
+          Distance only made me realize how much you mean to me.<br />
+          Sometimes, being apart can make the heart grow fonder.<br />
+        </p>
+      </div>
+
+      <!-- Slide 7 -->
+      <div class="slide" id="slide-7">
+        <div class="slider-images">
+          <img
+            src="images/slide7_1.jpeg"
+            alt="Si Nonnas 1"
+            class="slider-img active"
+          />
+          <img
+            src="images/slide7_2.jpeg"
+            alt="Si Nonnas 2"
+            class="slider-img"
+          />
+          <img
+            src="images/slide7_3.jpeg"
+            alt="Si Nonnas 3"
+            class="slider-img"
+          />
+        </div>
+        <h2>September 13</h2>
+        <p>
+          We met again at Si Nonnas.<br /><br />
+          After everything, seeing you across the table felt like coming
+          home.<br />
+          The world faded, and it was just us.<br /><br />
+          Some places become sacred because of who you share them with.
+        </p>
+      </div>
+
+      <!-- Slide 8 -->
+      <div class="slide" id="slide-8">
+        <div class="slider-images">
+          <img class="slider-img active" src="images/slide8_1.jpeg" alt="" />
+          <img class="slider-img" src="images/slide8_2.jpeg" alt="" />
+          <img class="slider-img" src="images/slide8_3.jpeg" alt="" />
+        </div>
+        <h2>November 10</h2>
+        <p>
+          My birthday. Same place.<br /><br />
+          Celebrating with you made the day unforgettable.<br />
+          You made me feel seen, cherished, loved.<br /><br />
+          It wasn’t about the party, it was about us.
+        </p>
+      </div>
+
+      <!-- Slide 9 -->
+      <div class="slide" id="slide-9">
+        <div class="slider-images">
+          <img class="slider-img active" src="images/slide9_1.jpeg" alt="" />
+          <img class="slider-img" src="images/slide9_2.jpeg" alt="" />
+        </div>
+        <h2>Pizza Day</h2>
+        <p>
+          We made pizza together.<br /><br />
+          It was messy, imperfect, and so much fun.<br />
+          We laughed, we learned.<br /><br />
+          I love that we can make anything work, as long as we’re together.
+        </p>
+      </div>
+
+      <!-- Slide 10 -->
+      <div class="slide" id="slide-10">
+        <div class="slider-images">
+          <img class="slider-img active" src="images/slide10_1.jpeg" alt="" />
+          <img class="slider-img" src="images/slide10_2.jpeg" alt="" />
+          <img class="slider-img" src="images/slide10_3.jpeg" alt="" />
+          <img class="slider-img" src="images/slide10_4.jpeg" alt="" />
+          <img class="slider-img" src="images/slide10_5.jpeg" alt="" />
+          <img class="slider-img" src="images/slide10_6.jpeg" alt="" />
+        </div>
+        <h2>November 28</h2>
+        <p>
+          Celebrating you felt like celebrating us.<br /><br />
+          I admire your ambition, your strength, your heart.<br />
+          You inspire me to be better.<br /><br />
+          I’m so proud of you.
+        </p>
+      </div>
+
+      <!-- Slide 11 -->
+      <div class="slide" id="slide-11">
+        <div class="slider-images">
+          <img class="slider-img active" src="images/slide11_1.jpeg" alt="" />
+          <img class="slider-img" src="images/slide11_2.jpeg" alt="" />
+          <img class="slider-img" src="images/slide11_3.jpeg" alt="" />
+          <img class="slider-img" src="images/slide11_4.jpeg" alt="" />
+          <img class="slider-img" src="images/slide11_5.jpeg" alt="" />
+        </div>
+        <h2>December 27</h2>
+        <p>
+          Watching you light up at something you always wanted to see.<br /><br />
+          Your happiness is my happiness.<br />
+          I love seeing you smile, truly smile.<br />
+          Those moments are everything to me.
+        </p>
+      </div>
+
+      <!-- Slide 12 -->
+      <div class="slide" id="slide-12">
+        <div class="slider-images">
+          <img class="slider-img active" src="images/slide12_1.jpeg" alt="" />
+          <img class="slider-img" src="images/slide12_2.jpeg" alt="" />
+          <img class="slider-img" src="images/slide12_3.jpeg" alt="" />
+          <img class="slider-img" src="images/slide12_4.jpeg" alt="" />
+          <img class="slider-img" src="images/slide12_5.jpeg" alt="" />
+        </div>
+        <h2>January 4</h2>
+        <p>
+          Our families met.<br /><br />
+          Something shifted, suddenly, it all felt real.<br />
+          No rush, no pressure.<br />
+          Just a quiet certainty that this is right.
+        </p>
+      </div>
+
+      <!-- Slide 13 -->
+      <div class="slide" id="slide-13">
+        <div class="slider-images">
+          <img class="slider-img active" src="images/slide13_1.jpeg" alt="" />
+          <img class="slider-img" src="images/slide13_2.jpeg" alt="" />
+          <img class="slider-img" src="images/slide13_3.jpeg" alt="" />
+          <img class="slider-img" src="images/slide13_4.jpeg" alt="" />
+          <img class="slider-img" src="images/slide13_5.jpeg" alt="" />
+          <img class="slider-img" src="images/slide13_6.jpeg" alt="" />
+          <img class="slider-img" src="images/slide13_7.jpeg" alt="" />
+          <img class="slider-img" src="images/slide13_8.jpeg" alt="" />
+          <img class="slider-img" src="images/slide13_9.jpeg" alt="" />
+          <img class="slider-img" src="images/slide13_10.jpeg" alt="" />
+        </div>
+        <h2>Small Moments</h2>
+        <p>
+          Bowling, dinners, silly conversations.<br /><br />
+          It’s the little things that built our love.<br />
+          The laughter, the comfort, the feeling of belonging.<br />
+          Maybe the small moments are the ones that matter most.
+        </p>
+      </div>
+
+      <!-- Slide 14 -->
+      <div class="slide">
+        <img src="images/13.jpg" alt="" />
+        <h2>Now</h2>
+        <p>
+          Lately, things have felt heavy.<br /><br />
+          We’ve stumbled, but we haven’t let go.<br />
+          I believe in us, in our ability to weather any storm.<br />
+          Love isn’t always easy, but it’s always worth it.
+        </p>
+      </div>
+
+      <!-- Slide 15 -->
+      <div class="slide">
+        <p>
+          <b>Shital,</b><br /><br />
+          I still smile when I think about the disciplined gym girl I met on
+          April 13th: strong, focused, and quietly ambitious.<br /><br />
+          I truly admire your consistency and the way you never give up. It
+          inspires me more than you know.<br /><br />
+          Sometimes I look for a deeper emotional connection, and in that
+          process I may say or do things impulsively.<br />
+          But you know where my heart is.<br /><br />
+          I don't want to rush you.<br />
+          I don't want to pressure you.<br />
+          I just want to build something steady and real, with patience.<br /><br />
+          Maybe we're still writing our story, one chapter at a time.<br />
+          And if there's one thing I'm certain about...<br /><br />
+          It's that I'm here.<br />
+          <b>Always.</b>
+        </p>
+        <button
+          id="restartBtn"
+          style="
+            margin-top: 24px;
+            padding: 12px 32px;
+            background: #a32654;
+            color: #fff;
+            border: none;
+            border-radius: 24px;
+            font-size: 16px;
+            cursor: pointer;
+          "
+        >
+          Start Again
+        </button>
+      </div>
+
+      <div class="button-container">
+        <button id="backBtn" style="display: none">Back</button>
+        <button id="nextBtn">Next</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+      // Dynamically load effects.html into the placeholder
+      fetch("effects.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("effects-placeholder").innerHTML = html;
+        });
+
+      // Restart button logic
+      document.addEventListener("DOMContentLoaded", function () {
+        const restartBtn = document.getElementById("restartBtn");
+        if (restartBtn) {
+          restartBtn.addEventListener("click", function () {
+            // Reset current slide index to 0
+            current = 0;
+            // Hide all slides
+            document
+              .querySelectorAll(".slide")
+              .forEach((slide) => slide.classList.remove("active"));
+            // Show first slide
+            document.querySelectorAll(".slide")[0].classList.add("active");
+            // Reset progress
+            document.getElementById("progress").innerText =
+              "1 / " + document.querySelectorAll(".slide").length;
+            // Update buttons and effects
+            updateButtons();
+            updateEffects();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
