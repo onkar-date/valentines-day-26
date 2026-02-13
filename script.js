@@ -255,18 +255,28 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function updateButtons() {
-    // Show back button from slide 2 onwards (index 1)
-    if (current >= 1) {
+    // Show/hide back button
+    if (current >= 1 && current < total - 1) {
       backBtn.style.display = "inline-block";
     } else {
       backBtn.style.display = "none";
     }
 
-    // Hide next button on last slide
+    // Show/hide next button
     if (current >= total - 1) {
       nextBtn.style.display = "none";
     } else {
       nextBtn.style.display = "inline-block";
+    }
+
+    // Show Start Again button only on last slide
+    const restartBtn = document.getElementById("restartBtn");
+    if (restartBtn) {
+      if (current === total - 1) {
+        restartBtn.style.display = "inline-block";
+      } else {
+        restartBtn.style.display = "none";
+      }
     }
   }
 
@@ -333,17 +343,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const restartBtn = document.getElementById("restartBtn");
   if (restartBtn) {
     restartBtn.addEventListener("click", function () {
-      // Reset current slide index to 0
-      current = 0;
-      // Hide all slides
-      slides.forEach((slide) => slide.classList.remove("active"));
-      // Show first slide
-      slides[0].classList.add("active");
-      // Reset progress
-      updateProgress();
-      // Update buttons and effects
-      updateButtons();
-      updateEffects();
+      // Only allow restart from last slide
+      if (current === total - 1) {
+        current = 0;
+        slides.forEach((slide) => slide.classList.remove("active"));
+        slides[0].classList.add("active");
+        updateProgress();
+        updateButtons();
+        updateEffects();
+      }
     });
   }
 }); // Close DOMContentLoaded
